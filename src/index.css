@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman";
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgb(226, 222, 222);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(167, 165, 165);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.form-item1 {
+  width: 15%;
+}
+
+.form-item2 {
+  width: 25%;
+}
+
+.form-item label {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-item input {
+  width: 90%;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: rgb(165, 163, 163) 1px solid;
+  border-radius: 5px;
+}
+
+.form-item input:focus {
+  outline: none;
+}
+
+.btn {
+  width: 20%;
+  height: 40px;
+  background-color: rgb(14, 123, 157);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(50, 143, 171);
+}
+
+.btn:active {
+  transform: scale(0.98);
+  border: 3px solid rgb(9, 79, 100);
+}
+
+.displayed-users {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayed-user {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(167, 165, 165);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.displayed-user-item {
+  text-transform: capitalize;
+}
+
+/* Media queries */
+@media (max-width: 955px) {
+  .main-form {
+    width: 315px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .displayed-users {
+    width: 315px;
+  }
+
+  .displayed-user {
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .displayed-user-item {
+    margin-bottom: 10px;
+  }
+}
